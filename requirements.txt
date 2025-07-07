@@ -8,4 +8,5 @@ statsmodels
 jupyterlab
 xgboost
 catboost
+dill
 #-e .
