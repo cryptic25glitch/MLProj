@@ -50,10 +50,21 @@ The objective is to accurately predict the **Math score**.
 - XGBoost  
 - CatBoost  
 - K-Nearest Neighbors  
- 
+- Support Vector Regressor  
 
-**Best Model Selected:** Linear Regression (accuracy:0.88)  
+**Best Model Selected:** Linear Regression (88.3% accuracy)
 
+---
+
+## Flask Web App
+
+A simple Flask web application was built to serve the model. The app:
+
+- Displays an HTML form for user input (gender, ethnicity, etc.)
+- Accepts input via POST request
+- Predicts and displays the expected **Math score**
+
+This allows non-technical users to interact with the trained model through a user-friendly interface.
 
 ---
 
