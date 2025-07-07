@@ -10,4 +10,5 @@ dill
 plotly
 xgboost
 catboost
+flask
 #-e .

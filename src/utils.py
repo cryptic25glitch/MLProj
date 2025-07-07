@@ -22,4 +22,20 @@ def save_object(obj, file_path):
     
     except Exception as e:
         raise CustomException(e, sys) from e
+    
+def load_object(file_path):
+    """
+    Load an object from a file using pickle.
+    
+    Parameters:
+    file_path: The path from which the object will be loaded.
+    
+    Returns:
+    The loaded object.
+    """
+    try:
+        with open(file_path, 'rb') as file_obj:
+            return dill.load(file_obj)
+    except Exception as e:
+        raise CustomException(e, sys) from e
 

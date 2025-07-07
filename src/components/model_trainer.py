@@ -48,7 +48,6 @@ class ModelTrainer:
                 'Gradient Boosting': GradientBoostingRegressor(),
                 'AdaBoost': AdaBoostRegressor()
             }
-
             model_report = {}
             for model_name, model in models.items():
                 logging.info(f'Training {model_name}')
@@ -57,6 +56,7 @@ class ModelTrainer:
                 r2_square = r2_score(y_test, y_pred)
                 model_report[model_name] = r2_square
                 logging.info(f'{model_name} R2 Score: {r2_square}')
+
 
             best_model_name = max(model_report, key=model_report.get)
             best_model_score = model_report[best_model_name]
